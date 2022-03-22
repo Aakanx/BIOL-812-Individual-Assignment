@@ -1,0 +1,7 @@
+---
+title: "README"
+author: "Aakanx Panchal (https://github.com/Aakanx)"
+output: github_document
+---
+
+![](./pipeline.svg)
