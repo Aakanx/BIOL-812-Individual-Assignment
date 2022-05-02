@@ -4,11 +4,11 @@ Nb = int(sys.argv[2])
 
 def DNAgen(FileName, Nb):
   from random import choices
-  x = choices(["A", "G", "C", "T"], k = Nb)
-  y = "".join(map(str, x))
+  x = choices(["A", "G", "C", "T"], k = Nb) # generate list of length Nb composed of As, Gs, Cs, and Ts
+  y = "".join(map(str, x)) # join list x into a string y
 
-  outfile = open("./" + str(FileName) + ".seq", "w")
-  outfile.write(y)
-  outfile.close()
+  outfile = open("./" + str(FileName) + ".seq", "w") # opening outfile for writing
+  outfile.write(y) # writing y to outfile
+  outfile.close() # closing outfile
 
 DNAgen(FileName, Nb)
