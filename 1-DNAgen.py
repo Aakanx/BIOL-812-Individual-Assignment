@@ -7,7 +7,7 @@ def DNAgen(FileName, Nb):
   x = choices(["A", "G", "C", "T"], k = Nb) # generate list of length Nb composed of As, Gs, Cs, and Ts
   y = "".join(map(str, x)) # join list x into a string y
 
-  outfile = open("./" + str(FileName) + ".seq", "w") # opening outfile for writing
+  outfile = open("./" + str(FileName) + ".seq", "w") # opening .seq outfile for writing
   outfile.write(y) # writing y to outfile
   outfile.close() # closing outfile
 
